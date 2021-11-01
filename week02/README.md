@@ -14,6 +14,8 @@ https://www.phdmedia.com/phd-insight-wechat-infographic/ *2019-03-26*
 
 ![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_usage_during_a_day.jpg)
 
+## 业务指标分析
+
 为了便于计算，我们将上面的折线图粗略转化为以下直方图：
 
 ![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_usage_histogram.jpg)
