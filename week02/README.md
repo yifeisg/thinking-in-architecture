@@ -2,7 +2,7 @@
 
 
 
-## 背景信息
+## 数据收集
 
 https://www.sohu.com/a/445526442_115565 *2021-01-19*
 
@@ -14,11 +14,11 @@ https://www.phdmedia.com/phd-insight-wechat-infographic/ *2019-03-26*
 
 ![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_usage_during_a_day.jpg)
 
-## 业务指标分析
-
 为了便于计算，我们将上面的折线图粗略转化为以下直方图：
 
 ![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_usage_histogram.jpg)
+
+## 业务指标分析
 
 ### 看朋友圈
 
@@ -48,6 +48,12 @@ https://www.phdmedia.com/phd-insight-wechat-infographic/ *2019-03-26*
 
 那么按照之前的直方图分析，假设这 6 亿条朋友圈有 8.5% 是在 8pm - 9pm 这一个小时内发出，则一共有 5100 万次发布，约合每秒 **1.4 万条发朋友圈 TPS** 。
 
+> 我们不用 “假设每条朋友圈有多少人浏览” 来计算看朋友圈的 QPS，一是因为每次 query 肯定不止拉取一条朋友圈，二是这些浏览也不一定都发生在一秒内，因此这样的估算有些不准确。
+
 ### 点赞评论
 
 假设平均到每条朋友圈下有 5 个点赞和 5 条评论，且假设每秒新增朋友圈数与每秒新增点赞 / 评论数成正相关，则一共是 **7 万个点赞 TPS** 和 **7 万条评论 TPS**。
+
+> 好吧我偷懒了，因为数据不足，只能这么估算，实际点赞数肯定是超过评论数的
+
+![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/by_case_analysis.jpg)
