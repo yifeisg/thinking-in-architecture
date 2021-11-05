@@ -68,15 +68,11 @@ https://www.phdmedia.com/phd-insight-wechat-infographic/ *2019-03-26*
 
 ## 架构设计
 
-### 看朋友圈
-
-![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_read_moments.jpg)
-
-### 发朋友圈
-
-
+![](https://github.com/yifeisg/thinking-in-architecture/blob/main/week02/wechat_moments_design.jpg)
 
 ## 拓展阅读
 
-浅析分布式主从架构下数据一致性问题：https://juejin.cn/post/6969229960515059743
+浅析分布式主从架构下数据一致性问题 https://juejin.cn/post/6969229960515059743
+
+CDN是什么？使用CDN有什么优势？ - 阿里巴巴淘系技术的回答 - 知乎 https://www.zhihu.com/question/36514327/answer/1604554133
 
